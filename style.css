@@ -1,0 +1,51 @@
+h1 a{
+    color: black; /* Couleur noire */
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Pas de soulignement */
+    
+}
+h5 {
+    font-family: Starling,Times New Roman,serif;
+}
+.center-title{
+    text-align: center;
+
+}
+
+.image-container {
+   
+    margin-bottom: 80px; /* Ajoutez l'espace souhaité ici */
+    align-items: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+#Page {
+   
+    margin-left: 200px;
+    
+}
+.image-container {
+    text-align: center;
+}
+.image-title {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #333;
+}
+.image:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.col{
+ 
+    margin-left: 80px;
+}
+ footer{
+    
+    text-align: right;
+}
+p{
+    color: black;
+}
