@@ -28,3 +28,19 @@ if (window.location.pathname === '/index.html') {
         });
     });
 }
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById('navbar');
+
+    if (prevScrollPos > currentScrollPos) {
+        navbar.classList.add('visible');
+        navbar.classList.remove('hidden');
+    } else {
+        navbar.classList.add('hidden');
+        navbar.classList.remove('visible');
+    }
+
+    prevScrollPos = currentScrollPos;
+});
