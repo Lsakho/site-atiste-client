@@ -1,58 +1,64 @@
-h1 a{
+/* Styles pour le titre du site */
+h1 a {
     color: black; /* Couleur noire */
     font-weight: bold; /* Texte en gras */
     text-decoration: none; /* Pas de soulignement */
-    
 }
+
+/* Styles pour les sous-titres */
 h5 {
-    font-family: Starling,Times New Roman,serif;
+    font-family: Starling, Times New Roman, serif;
 }
-.center-title{
+
+/* Styles pour le centrage du titre */
+.center-title {
     text-align: center;
-
 }
 
+/* Styles pour les conteneurs d'images */
 .image-container {
-   
     margin-bottom: 80px; /* Ajoutez l'espace souhaité ici */
     align-items: center;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-    
-}
-#Page {
-   
-    margin-left: 200px;
-    
-}
-.image-container {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
+
+/* Styles pour les titres d'images */
 .image-title {
     font-size: 14px;
     margin-top: 5px;
     color: #333;
 }
+
+/* Styles pour l'effet de survol des images */
 .image:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
 }
-.col{
- 
+
+/* Styles pour les colonnes */
+.col {
     margin-left: 80px;
 }
- footer{
-    
-    text-align: right;
+
+/* Styles pour le footer */
+footer {
+    text-align: center;
 }
-p{
+
+/* Styles pour les paragraphes */
+p {
     color: black;
 }
+
+/* Styles pour le corps de la page */
 body {
     padding-top: 70px; /* Ajoutez une marge au corps pour ne pas cacher le contenu sous la barre de navigation */
 }
 
+/* Styles pour la barre de navigation fixe en haut */
 .fixed-top {
     position: fixed;
     top: 0;
@@ -61,12 +67,45 @@ body {
     z-index: 1030;
 }
 
+/* Styles pour masquer la barre de navigation */
 .hidden {
     transform: translateY(-100%);
     transition: transform 0.3s;
 }
 
+/* Styles pour afficher la barre de navigation */
 .visible {
     transform: translateY(0);
     transition: transform 0.3s;
+}
+
+/* Styles pour les liens du menu de navigation */
+.nav-item a.nav-link {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Styles pour les liens du menu de navigation au survol */
+.nav-item a.nav-link:hover {
+    color:rgb(153, 119, 143); /* Couleur au survol */
+    background-color: transparent; /* Arrière-plan au survol */
+}
+
+/* Styles pour l'icône du bouton de menu */
+.navbar-toggler-icon {
+    transition: transform 0.3s;
+}
+
+/* Styles pour l'icône du bouton de menu au clic */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg); /* Rotation au clic */
+}
+
+/* Styles pour le menu déroulant */
+.dropdown-menu {
+    transition: opacity 0.3s;
+}
+
+/* Styles pour afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
 }
