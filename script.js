@@ -44,3 +44,17 @@ window.addEventListener('scroll', () => {
 
     prevScrollPos = currentScrollPos;
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+        
+    });
+});
+
+// $(document).ready(function() {
+//     lightbox.options.loop = true;
+
+//     $('[data-lightbox]').lightbox();
+// });

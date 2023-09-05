@@ -109,3 +109,71 @@ body {
 .dropdown:hover .dropdown-menu {
     opacity: 1;
 }
+
+
+
+/* // Vérifier si la page actuelle est index.html
+if (window.location.pathname === '/index.html') {
+    // Sélectionnez toutes les images
+    const images = document.querySelectorAll('img');
+
+    // Parcourez toutes les images et ajoutez les écouteurs d'événements
+    images.forEach(image => {
+        const imageLink = image.parentElement;
+        const imageTitle = imageLink.nextElementSibling; // Sélectionnez le titre suivant le lien
+
+        // Cachez tous les titres d'images par défaut
+        imageTitle.style.opacity = '0'; // Commence avec une opacité de 0
+
+        // Ajouter un écouteur pour afficher le titre quand la souris est dessus
+        image.addEventListener('mouseenter', () => {
+            imageTitle.style.opacity = '1'; // Augmenter l'opacité pour le faire apparaître en douceur
+        });
+
+        // Ajouter un écouteur pour cacher le titre quand la souris quitte l'image
+        image.addEventListener('mouseleave', () => {
+            imageTitle.style.opacity = '0'; // Réduire l'opacité pour le faire disparaître en douceur
+        });
+
+        // Ajouter un écouteur pour rediriger vers le lien de l'image quand on clique dessus
+        imageLink.addEventListener('click', (event) => {
+            event.preventDefault(); // Empêcher le comportement par défaut du lien
+            window.location.href = imageLink.href; // Rediriger vers l'URL du lien
+        });
+    });
+}
+
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById('navbar');
+
+    if (prevScrollPos > currentScrollPos) {
+        navbar.classList.add('visible');
+        navbar.classList.remove('hidden');
+    } else {
+        navbar.classList.add('hidden');
+        navbar.classList.remove('visible');
+    }
+
+    prevScrollPos = currentScrollPos;
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'albumLabel': 'Image %1 sur %2', // Personnalisez le libellé de l'album si nécessaire
+        'positionFromTop': 50, // Ajustez la distance du titre par rapport au haut de la fenêtre
+        'alwaysShowNavOnTouchDevices': true, // Activez les flèches de navigation sur les appareils tactiles
+        'showImageNumberLabel': false, // Désactivez l'affichage du numéro de l'image
+        'fadeDuration': 300, // Personnalisez la durée de l'animation de fondu
+        'imageFadeDuration': 300, // Personnalisez la durée de l'animation de fondu de l'image
+
+        // Personnalisez la fonction qui obtient le titre de l'image
+        'imageTitle': function (currentImage, container) {
+            return currentImage.dataset.title;
+        }
+    });
+}); */
