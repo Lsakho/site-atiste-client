@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./lightbox2-2.11.4/src/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ousmane_Dia</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <h1 class="center-title visible"><a href="index.html">Ousmane Dia</a></h1> -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-2" id="navbar">
+            <div class="container">
+                <h1 class="center-title mx-auto"> <!-- Utilisation de la classe mx-auto pour centrer horizontalement -->
+                    <a href="index.html">Ousmane Dia</a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Exposition
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="rennaissance.html">Rennaissance</a></li>
+                                <li><a class="dropdown-item" href="delivrance.html">Delivrance</a></li>
+                                <li><a class="dropdown-item" href="affirmation.html">Affirmation</a></li>
+                                <li><a class="dropdown-item" href="oula.html">Oula</a></li>
+                                <li><a class="dropdown-item" href="pouvoirDes-mains.html">Pouvoir Des Mains</a></li>
+                                <li><a class="dropdown-item" href="mora.html">Galerie Moramora</a></li>
+                                <li><a class="dropdown-item" href="maturite.html">Maturité</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ressource
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="ressource.html">Profil</a></li>
+                                <li><a class="dropdown-item" href="textes.html">Textes</a></li>
+                                <li><a class="dropdown-item" href="press.html">Press</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+        
+    </div>
+    <div class="container mt-5">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Le Quotidient </h4>
+                    <p class="date"> Date: 05 Janvier 2018</p>
+                    <div class="details">
+                        <div class="container image-container">
+                            <iframe src="./images/Sculptures/maturite/Presse_maturite/lequotidien.pdf" width="100%" height="500px"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Le Soleil </h4>
+                    <p class="date"> Date:  01 Fevrier 2018</p>
+                    <div class="details">
+                        <a href="./images/Sculptures/maturite/Presse_maturite/Le-Soleil-1-fev-18.jpg" data-lightbox="soleil">
+                            <img src="./images/Sculptures/maturite/Presse_maturite/Le-Soleil-1-fev-18.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Magazine le Reflet </h4>
+                    <p class="date"> Date:  Decembre 2017</p>
+                    <div class="details">
+                        <a href="./images/Sculptures/maturite/Presse_maturite/Reflets.jpg" data-lightbox="Reflet">
+                            <img src="./images/Sculptures/maturite/Presse_maturite/Reflets.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title"> PressAfrik </h4>
+                    <p class="date"> Date: Janvier 2018</p>
+                    <div class="details">
+                        <a href="./images/Sculptures/maturite/Presse_maturite/pressAfrik.jpg" data-lightbox="PressAfrik">
+                            <img src="./images/Sculptures/maturite/Presse_maturite/pressAfrik.jpg" class="img-fluid" alt="">
+                        </a>
+                        <a href="https://www.pressafrik.com/Maturite-Ousmane-Dia-chante-la-democratie-a-travers-365-sculptures_a176402.html" target="_blank">
+                            <button class="btn btn-primary">See more...</button>
+                        </a>                    
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Grand Air </h4>
+                    <p class="date"> Date:  22 Fevrier 2018</p>
+                    <div class="details">
+                        <a href="./images/Sculptures/maturite/Presse_maturite/grand-air_Lesoleil.jpg" data-lightbox="grandAir">
+                            <img src="./images/Sculptures/maturite/Presse_maturite/grand-air_Lesoleil.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Region </h4>
+                    <p class="date"> Date:  26 Aout 2013</p>
+                    <div class="details">
+                        <a href="./images/Presse/Hebdo1.jpg" data-lightbox="hebdo">
+                            <img src="./images/Presse/Hebdo1.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Le Soleil </h4>
+                    <p class="date"> Date:  06 Fevrier 2015</p>
+                    <div class="details">
+                        <a href="./images/Presse/Lesoleil.jpg" data-lightbox="lesoleil">
+                            <img src="./images/Presse/Lesoleil.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">©Dakar </h4>
+                    <p class="date"> Date:  15 Aout 2010</p>
+                    <div class="details">
+                        <a href="./images/Presse/cdakar.jpg" data-lightbox="cdakar">
+                            <img src="./images/Presse/cdakar.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Sud Quotidient </h4>
+                    <p class="date"> Date:  10 mars 2015</p>
+                    <div class="details">
+                        <a href="./images/Presse/SudQuotidien.jpg" data-lightbox="sudQoutidient">
+                            <img src="./images/Presse/SudQuotidien.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">Ouest-France </h4>
+                    <p class="date"> Date:  19 juin 2015</p>
+                    <div class="details">
+                        <a href="./images/Presse/OuestFrance.jpg" data-lightbox="Ouest-France">
+                            <img src="./images/Presse/OuestFrance.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="item" onclick="toggleDetails(this)">
+                    <h5 class="author mb-0"></h5>
+                    <h4 class="title">le Soleil </h4>
+                    <p class="date"> Date:  13 Avril 2015</p>
+                    <div class="details">
+                        <a href="./images/Presse/SudquotidienNYC.jpg" data-lightbox="sudQoutidient">
+                            <img src="./images/Presse/SudquotidienNYC.jpg" class="img-fluid" alt="">
+                        </a>
+
+                </div>
+            </li>
+            
+
+            
+            <!-- Ajoutez d'autres éléments de la même manière -->
+        </ul>
+    </div>
+
+    
+
+
+
+    <footer class="bg-light text-light py-5">
+       <p> copyright (©) Ousmane DIA 2023 - Tous droits réservés</p>
+        </div>
+    </footer>
+        
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./lightbox2-2.11.4/src/js/lightbox.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
