@@ -111,7 +111,22 @@ body {
 }
 
 .profiltext{
-    font-family: Arial, sans-serif;
+    font-family: Starling,Times New Roman,serif;
+    font-size: 15px;
 
 
+}
+.item {
+    cursor: pointer;
+    display: flexbox;
+}
+
+.article {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.details {
+    display: none;
+    margin: 10px 0;
 }

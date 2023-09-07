@@ -58,3 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //     $('[data-lightbox]').lightbox();
 // });
+
+function toggleDetails(element) {
+    const details = element.querySelector('.details');
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+    } else {
+        details.style.display = 'none';
+    }
+}
