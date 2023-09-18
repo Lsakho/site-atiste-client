@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte à Rebours</title>
+    <style>
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown" id="countdown">
+       <h1>hello</h1> 
+    </div>
+
+    <script>
+        // Date de début et date de fin du compte à rebours (modifiables)
+        const startDate = new Date('2023-09-18 00:00:00').getTime(); // Remplacez par votre date de début
+        const endDate = new Date('2023-09-20 00:00:00').getTime();   // Remplacez par votre date de fin
+
+        // Fonction pour mettre à jour le compte à rebours
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = endDate - now;
+
+            if (timeLeft <= 0) {
+                // Si la date de fin est atteinte, masquez la div du compte à rebours
+                document.getElementById('countdown').classList.add('hidden');
+            } else {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                // Mettez à jour le contenu de la div du compte à rebours
+                document.getElementById('countdown').innerHTML = `<h1> Hello wolrd </h1>${days}j ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+
+        // Mettez à jour le compte à rebours toutes les 1 seconde
+        setInterval(updateCountdown, 1000);
+
+        // Appelez la fonction une fois au chargement de la page pour éviter un délai initial
+        updateCountdown();
+    </script>
+</body>
+</html>
